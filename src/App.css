@@ -57,7 +57,7 @@ body {
     color: #fff !important;
     font-family: 'Centra', sans-serif !important;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-	background-color: #463c5c !important;
+	background-color: #9197ae !important;
     background-repeat: repeat;
     background-position: top left;
     background-attachment: fixed;
@@ -109,13 +109,14 @@ select:focus {
 	top: 0%;
 	z-index: 1;
 	transition: 0.5s ease-in-out;
-	background-color: #273043;
+	background-color: #9197ae
+	;
 	
   }
   
   nav.navbar.navbar-scrolled {
 	padding: 10px 0;
-	background-color: #9197ae; 
+	background-color: #8873c1; 
   }
   
 
