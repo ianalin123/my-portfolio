@@ -11,6 +11,9 @@ export const Banner = () => {
   const [delta, setDelta] = useState(100);
   const toRotate = [
     "EECS Junior at UC Berkeley",
+    "Neuroscience Enthusiast",
+    "Avid Walker"
+
   ];
   const period = 1000;
 

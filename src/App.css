@@ -1,19 +1,19 @@
 /************ Custom Font ************/
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Bold.ttf');
+	font-family: Canela;
+	src: url('./assets/font/Canela-Bold-Trial.otf');
 	font-weight: 700;
 }
 
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Medium.ttf');
+	font-family: Canela;
+	src: url('./assets/font/Canela-Medium-Trial.otf');
 	font-weight: 500;
 }
 
 @font-face {
-	font-family: Centra;
-	src: url('./assets/font/CentraNo2-Book.ttf');
+	font-family: Canela;
+	src: url('./assets/font/Canela-Regular-Trial.otf');
 	font-weight: 400;
 }
 
@@ -55,7 +55,7 @@ body {
     overflow-x: hidden;
     position: relative;
     color: #fff !important;
-    font-family: 'Centra', sans-serif !important;
+    font-family: 'Canela', sans-serif !important;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
 	background-color: #9197ae !important;
     background-repeat: repeat;
@@ -116,7 +116,7 @@ select:focus {
   
   nav.navbar.navbar-scrolled {
 	padding: 10px 0;
-	background-color: #8873c1; 
+	background-color: #766a99; 
   }
   
 
@@ -461,7 +461,7 @@ section:not(.banner) {
 .tags {
 	display: block;
 	margin-top: 5px;
-	color: #5dc05d;
+	color: #5b683e;
 }
 
 .vertical-timeline * {
