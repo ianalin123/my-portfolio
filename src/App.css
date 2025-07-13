@@ -1,20 +1,21 @@
 /************ Custom Font ************/
 @font-face {
-	font-family: Canela;
-	src: url('./assets/font/Canela-Bold-Trial.otf');
-	font-weight: 700;
+	font-family: Bookerly;
+	src: url('./assets/font/Bookerly\ Bold.ttf');
+	font-weight: 600;
 }
 
 @font-face {
-	font-family: Canela;
-	src: url('./assets/font/Canela-Medium-Trial.otf');
-	font-weight: 500;
+	font-family: Bookerly;
+	src: url('./assets/font/Bookerly.ttf');
+	font-weight: 350;
 }
 
 @font-face {
-	font-family: Canela;
-	src: url('./assets/font/Canela-Regular-Trial.otf');
-	font-weight: 400;
+	font-family: Bookerly;
+	src: url('./assets/font/Bookerly\ Light.ttf');
+
+	font-weight: 250;
 }
 
 /************ Default Css ************/
@@ -54,10 +55,10 @@ body {
     font-weight: 400;
     overflow-x: hidden;
     position: relative;
-    color: #fff !important;
-    font-family: 'Canela', sans-serif !important;
+    color: rgb(28, 28, 28) !important;
+    font-family: 'Bookerly' !important;
     font-size: clamp(0.8rem, 2.5vw, 1.2rem);
-	background-color: #9197ae !important;
+	background-color: #f4f4f4 !important;
     background-repeat: repeat;
     background-position: top left;
     background-attachment: fixed;
@@ -100,25 +101,48 @@ select:focus {
 	outline: none;
 }
 
-
-
-  nav.navbar {
+nav.navbar {
 	padding: 18px 0;
 	position: fixed;
 	width: 100%;
 	top: 0%;
 	z-index: 1;
 	transition: 0.5s ease-in-out;
-	background-color: #9197ae
-	;
-	
-  }
-  
-  nav.navbar.navbar-scrolled {
+	background-color: #f4f4f4;
+}
+
+nav.navbar.navbar-scrolled {
 	padding: 10px 0;
-	background-color: #766a99; 
-  }
-  
+	background-color: #84848c; 
+}
+
+nav.navbar .navbar-nav .nav-link,
+nav.navbar .navbar-brand {
+	color: rgb(28, 28, 28);
+	transition: color 0.3s ease-in-out;
+	width: auto;
+	font-size: clamp(12px, 2.5vw, 18px);
+}
+
+.navbar-scrolled .navbar-brand,
+.navbar-scrolled .navbar-nav .nav-link {
+	color: #ffffff !important;
+	transition: color 0.3s ease-in-out;
+}
+
+nav.navbar .navbar-nav .nav-link:hover,
+nav.navbar .navbar-nav .nav-link.active {
+	text-decoration: underline;
+}
+
+.navbar-scrolled .navbar-nav .nav-link:hover,
+.navbar-scrolled .navbar-nav .nav-link.active {
+	text-decoration: underline;
+}
+span.navbar-text {
+	display: flex;
+	align-items: center;
+}
 
 @media (max-width: 992px) {
 	.navbar-expand-md {
@@ -130,23 +154,6 @@ select:focus {
 	.navbar-collapse {
 	  width: 100%;
 	}
-  }
-
-nav.navbar a.navbar-brand {
-	width: auto;
-	font-size: clamp(12px, 2.5vw, 18px);
-  }
-
-
-nav.navbar .navbar-nav a.nav-link.navbar-link:hover,
-nav.navbar .navbar-nav a.nav-link.navbar-link.active {
-	opacity: 1;
-	
-}
-
-span.navbar-text {
-	display: flex;
-	align-items: center;
 }
 
 .social-icon {
@@ -156,16 +163,17 @@ span.navbar-text {
 }
 
 .social-icon a {
+	
 	width: 42px;
 	height: 42px;
-	background: rgba(217, 217, 217, 0.1);
+	background: #84848c;
 	display: inline-flex;
 	border-radius: 50%;
 	margin-right: 6px;
 	align-items: center;
 	justify-content: center;
 	line-height: 1;
-	border: 1px solid rgba(255, 255, 255, 0.5);
+	border: 1px solid rgba(28, 28, 28, 0.5);
 }
 
 .social-icon a::before {
@@ -173,7 +181,7 @@ span.navbar-text {
 	width: 42px;
 	height: 42px;
 	position: absolute;
-	background-color: #ffffff;
+	background-color: #f4f4f4;
 	border-radius: 50%;
 	transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -197,7 +205,6 @@ span.navbar-text {
 .logo-text {
 	font-size: 18px;
 	font-weight: 400;
-	color: #ffffff;
 	letter-spacing: 0.8px;
 }
 
@@ -334,7 +341,7 @@ section:not(.banner) {
 	width: 90%;
 	margin: 0 auto;
 	border-radius: 50px;
-	background-color: rgb(255 255 255 / 10%);
+	background-color: rgba(255, 255, 255, 0.1);
 	overflow: hidden;
 }
 
@@ -517,17 +524,18 @@ section:not(.banner) {
 
 .tech-icons {
 	font-size: 4.5em !important;
-	margin: 15px !important;
+	margin: 10px !important;
 	padding: 10px !important;
 	opacity: 0.93 !important;
 	border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
-	vertical-align: middle !important;
-	text-align: center !important;
 	border-radius: 5px !important;
-	display: table !important;
+	display: flex !important;
 	box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
 	overflow: hidden !important;
 	transition: all 0.4s ease 0s !important;
+
+	align-items: center !important;
+	justify-content: center !important;
 }
 
 @media (max-width: 767px) {

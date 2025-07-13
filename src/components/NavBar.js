@@ -22,8 +22,8 @@ export const NavBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link href="#Experiences">Experience</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>
+            <Nav.Link href="#experiences">Experiences</Nav.Link>
             <Nav.Link href="#techstack">Techstack </Nav.Link>
             <Nav.Link href={`${process.env.PUBLIC_URL}/assets/Iana_Lin_Resume.pdf`}>
               Resume 

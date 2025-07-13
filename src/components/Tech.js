@@ -1,9 +1,12 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
-import { DiJavascript1, DiPython, DiReact } from "react-icons/di";
-import { FaBootstrap } from "react-icons/fa";
-import { SiCss3, SiHtml5, SiTailwindcss, SiGnubash, SiPowershell } from "react-icons/si";
+import { DiJava , DiPython } from "react-icons/di";
+import { FaRProject } from "react-icons/fa";
+import { SiCss3, SiHtml5, SiTensorflow, SiGnubash, SiPowershell, SiScikitlearn, SiNumpy, SiPandas, SiPytorch, SiRiscv
+} from "react-icons/si";
+import matlabLogo from '../assets/img/mathworks-logo.png';
+
 
 export const Techstack = () => {
   return (
@@ -12,34 +15,40 @@ export const Techstack = () => {
         <h2>Languages & Frameworks</h2>
       </section>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHtml5 />
+        <CgCPlusPlus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCss3 />
+        <FaRProject />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <FaBootstrap />
+      <img src={matlabLogo} alt="MATLAB" style={{ width: "60%", height: "auto" }} />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiTailwindcss />
+        <DiJava />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiGnubash />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPowershell />
+        <SiRiscv />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiNumpy />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiScikitlearn />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPytorch />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTensorflow />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiPandas />
       </Col>
     </Row>
   );

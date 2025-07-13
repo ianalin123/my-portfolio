@@ -98,7 +98,7 @@ export const ExperienceTimeline = () => {
   ];
 
   return (
-    <div className="timeline-container">
+    <div className="timeline-container" id="experiences">
       <section className="project">
         <h2>Relevant Experiences</h2>
       </section>

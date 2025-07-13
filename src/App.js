@@ -3,10 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { NavBar } from "./components/NavBar";
 import { Banner } from "./components/Banner";
 import { Projects } from "./components/Projects";
-import { EduTimeline } from './components/EduTimeline';
 import { ExperienceTimeline } from './components/ExperienceTimeline';
 import { Techstack } from './components/Tech';
-import { Toolstack } from './components/Tool';
 
 
 
@@ -17,12 +15,10 @@ function App() {
       <NavBar />
       <Banner />
       </div>
-      <EduTimeline />
-      <ExperienceTimeline />
       <Projects />
+      <ExperienceTimeline />
       <Techstack />
-      <Toolstack />
-    </div>
+      </div>
   );
 }
 
